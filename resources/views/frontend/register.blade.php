@@ -7,6 +7,7 @@
     <section class="py-5">
       <div class="container">
         <form>
+          <h1> Register New User </h1>
             <div class="form-group row">
             <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
