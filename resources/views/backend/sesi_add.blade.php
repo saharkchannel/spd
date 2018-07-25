@@ -1,4 +1,4 @@
-@extends('frontend.layout')
+@extends('backend.layout')
 
 @section('content')
 
@@ -8,7 +8,7 @@
       <div class="container">
         <form method="POST" action="{{route('user.register.post')}}">
           @csrf
-          <h1> Register New User </h1>
+          <h1> Tambah Sesi </h1>
          
           @if (session('status'))
               <div class="alert alert-success">

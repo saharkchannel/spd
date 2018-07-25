@@ -34,11 +34,21 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+            @guest
             <li class="nav-item">
               <a class="nav-link" href="{{ route('user.login')}}">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('user.register')}}">Register</a>
+            </li>
+            @endguest
+            @auth
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('user.logout')}}">Logout</a>
+            </li>
+            @endauth
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('user.contact')}}">Contact</a>
             </li>
           </ul>
         </div>
